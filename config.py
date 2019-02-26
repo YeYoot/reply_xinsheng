@@ -19,12 +19,14 @@ SHOW_CHROM = False
 URL = "http://xinsheng.huawei.com/cn/index.php?app=forum&mod=Detail&act=index&id=4187335&p=last#p37449143"
 
 # 以下内容无需修改
-LOGIN_URL = "https://uniportal.huawei.com/uniportal/"
+# LOGIN_URL = "https://uniportal.huawei.com/uniportal/"
+LOGIN_URL = "https://login.huawei.com/login"
 
 PATH = {
     "输入账号": '//*[@id="uid"]',
     "输入密码": '//*[@id="password"]',
-    "点击登陆": '//*[@id="content"]/div[2]/div[2]/div[1]/div[5]/center/input',
+    "点击登陆_uniportal": '//*[@id="content"]/div[2]/div[2]/div[1]/div[5]/center/input',
+    "点击登陆": '//*[@id="page-input-holder-pwd"]/form/div/input[2]',
 
     "输入框": '/html/body',
     "回复": '//*[@id="post_btn"]'
